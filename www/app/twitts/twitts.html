@@ -19,12 +19,12 @@
           <img ng-src="{{twitt.avatar}}">
         </div>
         <div class="item tabs tabs-secondary tabs-icon-left">
-          <a class="tab-item" href="#">
-            <i class="icon ion-ios-heart"></i>
+          <a class="tab-item" ng-click="liked=!liked">
+            <i ng-class="{'icon ion-ios-heart': liked, 'icon ion-ios-heart-outline': !liked}" ></i>
             Like
           </a>
           <a class="tab-item" href="#">
-            <i class="icon ion-ios-chatbox"></i>
+            <i class="icon ion-ios-chatbubble-outline"></i>
             Comment
           </a>
           <a class="tab-item" href="#">
